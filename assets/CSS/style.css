@@ -98,8 +98,8 @@ p {
 .hero-btn {
     display: inline-block;
     text-decoration: none;
-    color: var(--highligt-color-light);
-    border: 2px solid var(--highligt-color-light);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     padding: 12px 22px;
     font-size: 15px;
     font-weight: 600;
@@ -129,15 +129,16 @@ p {
 
 
 /* Footer content */
-footer {
+.links {
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
 } 
-
-footer h2, p {
+.links {
     color: var(--highligt-color);
 }
+    
+
 
 .social-links a {
     justify-content: space-between;
