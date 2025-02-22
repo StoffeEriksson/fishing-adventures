@@ -35,10 +35,34 @@ p {
 }
 
 /* Navigation bar */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 7px;
+}
+
+.nav-item a {
+    color: var(--highligt-color-light);
+    
+}
+
+/*.navbar-toggler #toggler-icon {
+    background-color: var(--secondary-color);
+    
+}*/
+#navbar-toggle {
+    background-color: var(--highligt-color);
+    border: var(--highligt-color);
+}
+
+.nav-item a:hover {
+    color: var(--highligt-color);
+}
+
+
 
 /* Heading */
 
-.container {
+.header-container {
     min-width: 100%;
     min-height: 100vh;
     background-image: url(../images/1602764.jpg);
@@ -61,14 +85,16 @@ p {
 }
 
 .heading h1 {
-    font-size: 35px;
+    font-size: 38px;
+    font-weight: 600;
 }
 
 .heading p {
     margin: 10px o 40px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
+/* Hero button */
 .hero-btn {
     display: inline-block;
     text-decoration: none;
@@ -89,9 +115,38 @@ p {
     transition: 1s;
 }
 
+/* Main content */
+
+.wrap-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+
+}
+
+
+/* Footer content */
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+} 
+
+footer h2, p {
+    color: var(--highligt-color);
+}
+
+.social-links a {
+    justify-content: space-between;
+    text-decoration: none;
+}
 
 
 
+/* Fishing section */
 
 /* Media queries */
 
@@ -103,14 +158,16 @@ p {
 }
 
 /* large devices (small laptops, 992px and up) */
+/*
 @media screen and (min-width: 992px) {
 
-}
+}*/
 
 /* large devices (laptops, 1200px and up) */
-@media screen and (min-width: 1200px) {
 
-}
+/*@media screen and (min-width: 1200px) {
+
+}*/
 
 
 
