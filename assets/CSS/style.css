@@ -1,7 +1,116 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
 
-body {
-    background-color: lightblue;
-    font-family: "Inter" sans-serif;
+/* CSS variables */
+:root {
+    --primary-color: #1b2e28;
+    --secondary-color: #3a5845;
+    --highligt-color: #42a2d1;
+    --highligt-color-light: #e7e9e8;
+
+    --primary-font: "Oswald", sans serif;
+    --secondary-font: "Inter", sans serif;
 }
+
+/* 
+#42A2D1 Shakespear (light blue)
+#E7E9E8 Black haze (Cloudy white)
+#3A5845 Mineral green (green)
+#1B2E28 Timber green (dark green)
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+h1, 
+h2,
+h3 {
+    font-family: var(--primary-font);
+}
+
+p {
+    font-family: var(--secondary-font);
+}
+
+/* Navigation bar */
+
+/* Heading */
+
+.container {
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/1602764.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 56px; /* Fixed so the navbar doesen´t get in the way */
+    
+}
+
+.heading {
+    width: 90%;
+    color: var(--primary-color);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+.heading h1 {
+    font-size: 20px;
+}
+
+.heading p {
+    margin: 10px o 40px;
+    font-size: 7px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 6px 18px;
+    font-size: 7px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--highligt-color-light);
+    transition: 1s;
+}
+
+
+
+
+
+/* Media queries */
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .heading h1 {
+        font-size: 62px;
+    }
+}
+
+/* large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+}
+
+/* large devices (laptops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    
+}
+
+
+
+
+
