@@ -53,7 +53,7 @@ p {
     width: 90%;
     color: var(--primary-color);
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -61,21 +61,22 @@ p {
 }
 
 .heading h1 {
-    font-size: 20px;
+    font-size: 35px;
 }
 
 .heading p {
     margin: 10px o 40px;
-    font-size: 7px;
+    font-size: 18px;
 }
 
 .hero-btn {
     display: inline-block;
     text-decoration: none;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    padding: 6px 18px;
-    font-size: 7px;
+    color: var(--highligt-color-light);
+    border: 2px solid var(--highligt-color-light);
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight: 600;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -84,6 +85,7 @@ p {
 .hero-btn:hover {
     background-color: var(--primary-color);
     color: var(--highligt-color-light);
+    border-color: var(--primary-color);
     transition: 1s;
 }
 
@@ -107,7 +109,7 @@ p {
 
 /* large devices (laptops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-    
+
 }
 
 
