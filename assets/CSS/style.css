@@ -1,3 +1,66 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-font: "Oswald", sans-serif;
+    --secondary-font: "Inter", cursive;
+    --primary-color: #524537; /* dark brown */
+    --secondary-color: #756459; /* light brown */
+    --highlight-color: #50596c; /* blue */
+    --highlight-color-light: #8892a9; /* light blue */
+  }
+
+
+  /* Global styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background-color: aqua;
+    font-family: var(--primary-font);
+    padding-top: 59px; /* Prevents the navbar to get in the way of heading text */
+}
+
+
+/* Navbar style */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar .navbar-nav {
+    color: #ffffff;
+}
+
+/* Header section */
+.heading-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/strömmande\ vatten.jpg);
+    min-height: 700px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.heading-text {
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-text h1 {
+    font-family: var(--primary-font);
+    font-size: 35px;
+    font-weight: 600;
+    
+}
+
+.heading-text p {
+    font-family: var(--secondary-font);
+    font-size: 12px;
+    font-weight: 300;
 }
