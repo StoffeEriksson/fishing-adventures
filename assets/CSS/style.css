@@ -66,6 +66,23 @@ body {
     font-weight: 300;
 }
 
+/* Buttons */
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    padding: 12px 24px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
 /* Main section */
 .wrapper {
     display: flex;
