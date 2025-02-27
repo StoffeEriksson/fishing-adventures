@@ -20,8 +20,18 @@
 }
 
 body {
-    font-family: var(--primary-font);
+    
     padding-top: 59px; /* Prevents the navbar to get in the way of heading text */
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: var(--primary-font);
+}
+
+p {
+    font-family: var(--secondary-font);
 }
 
 
@@ -99,6 +109,7 @@ section {
     box-sizing: border-box;
 }
 
+/* About us section */
 #about-us {
     width: 100%;
     height: auto;
@@ -125,6 +136,8 @@ section {
     height: auto;
 }
 
+
+/* Contact section */
 #contact {
     line-height: 2em;
     letter-spacing: 1px;
@@ -195,7 +208,142 @@ footer {
     margin-top: 20px;
 }
 
-/* media queries */
+/* Fishing page */
+
+.header {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/header-image-fishing.jpg);
+    min-height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header-text {
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.header-text h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.header-text p {
+    font-size: 19px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* main section */
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh; 
+  }
+
+  .fishing-text {
+    padding-top: 10px;
+  }
+
+  
+  .fishing-text, .fishing-images {
+    width: 100%;
+    
+  }
+
+  .card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    
+  }
+  
+  
+  .fishing-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 0;
+  }
+  
+  .image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    
+  }
+  
+ 
+  
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row; /* Side-by-side layout */
+      justify-content: space-between;
+      align-items: stretch; /* Makes both sections take full height */
+      min-height: 100vh; /* Ensures full height */
+    }
+  
+    .fishing-text, .fishing-images {
+      flex: 1; /* Make both sections grow equally */
+      min-width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; /* Center text vertically */
+    }
+  
+    .fishing-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Center images as well */
+    }
+  
+    .image img {
+      max-width: 100%;
+    }
+  }
+  
+  /* Extra responsiveness for very large screens */
+  @media (min-width: 1200px) {
+    .fishing-text, .fishing-images {
+      flex: 1.2;
+      max-width: 600px;
+    }
+  
+    .image img {
+      max-width: 500px;
+    }
+  }
+  
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .wrapper {
         flex-direction: column;
@@ -209,6 +357,8 @@ footer {
     .heading-text h1 {
         font-size: 30px;
     }
+
+    
 }
 
 
