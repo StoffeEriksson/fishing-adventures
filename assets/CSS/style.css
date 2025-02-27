@@ -21,7 +21,7 @@
 
 body {
     
-    padding-top: 59px; /* Prevents the navbar to get in the way of heading text */
+    padding-top: 58px; /* Prevents the navbar to get in the way of heading text */
 }
 
 h1, 
@@ -210,6 +210,7 @@ footer {
 
 /* Fishing page */
 
+/* Heading section */
 .header {
     background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/header-image-fishing.jpg);
     min-height: 400px;
@@ -250,7 +251,7 @@ footer {
     width: 100%;
     min-height: 100vh; 
   }
-
+ /* Text column*/
   .fishing-text {
     padding-top: 10px;
   }
@@ -265,10 +266,14 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     border: none;
+    text-align: center;
     
   }
+  .card p {
+    font-size: 15px;
+  }
   
-  
+  /* Images section */
   .fishing-images {
     display: flex;
     flex-wrap: wrap;
@@ -279,7 +284,6 @@ footer {
   
   .image img {
     width: 100%;
-    max-width: 400px;
     height: auto;
     
   }
@@ -300,18 +304,23 @@ footer {
       min-width: 45%;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly; /* Center text vertically */
+      justify-content: space-evenly; /* Center texts vertically */
     }
   
     .fishing-images {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; /* Center images as well */
+      justify-content: space-evenly; /* Center images as well */
     }
   
     .image img {
-      max-width: 100%;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .card {
+        text-align: left;
     }
   }
   
