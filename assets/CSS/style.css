@@ -298,6 +298,32 @@ footer {
   height: auto;
 }
 
+/* Booking page */
+
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/tennan.jpg);
+  min-height: 700px;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+
+/* Contact form */
+
+
+
 /* Media query for larger screens (768px) */
 @media (min-width: 768px) {
   .wrapper {
