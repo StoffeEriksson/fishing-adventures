@@ -350,17 +350,6 @@ label {
   color: #ffffff;
 }
 
-input {
-  background: linear-gradient(rgba(80, 89, 108, 0.3), rgba(80, 89, 108, 0.3));
-  border: 1px solid #ffffff;
-  color: #ffffff;
-}
-
-select  {
-  background: linear-gradient(rgba(80, 89, 108, 0.3), rgba(80, 89, 108, 0.3));
-  border: 1px solid #ffffff;
-  color: #ffffff;
-}
 
 input, 
 select {
@@ -368,10 +357,12 @@ select {
   padding: 10px;
   margin: 5px 0;
   border-radius: 5px;
+  background: linear-gradient( rgba(80, 89, 108, 0.5), rgba(80, 89, 108, 0.5));
+  color: black;
 }
 
 input[type="submit"] {
-  background-color: rgba(80, 89, 108, 1);
+  background-color: var(--highlight-color);
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: var(--primary-color);
