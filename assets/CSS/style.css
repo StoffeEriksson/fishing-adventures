@@ -357,8 +357,8 @@ select {
   padding: 10px;
   margin: 5px 0;
   border-radius: 5px;
-  background: linear-gradient( rgba(80, 89, 108, 0.5), rgba(80, 89, 108, 0.5));
-  color: black;
+  background-color: rgba(80, 89, 108, 0.5);
+  color: #fff;
 }
 
 input[type="submit"] {
