@@ -64,53 +64,61 @@
     <header>
       <div id="hero">
         <div class="hero-text">
-          <h2>Fiske i norra Jämtland!</h2>
-          <p>I Jämtland finns ett stort antal fiske vatten</p>
+          <h2>Booking reservation</h2>
+          <p>Send a request and we get back to you as soon as possible!</p>
         </div>
-
-        <form action="" method="post">
-          <fieldset>
-            <legend>Choose Product</legend>
-            <label for="first-name">First Name:</label>
-            <input
-              type="text"
-              id="firstname"
-              placeholder="First Name"
-              required
-            />
-            <label for="last-name">Last Name</label>
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              placeholder="Last Name"
-              required
-            />
-            <label for="email">Email Address:</label>
-            <input type="email" name="email" id="email" />
-            <label for="phone-nr">Phone nr:</label>
-            <input type="tel" name="phone" id="phone" />
-            <label for="licence">Choose a pass</label>
-            <select name="licence" id="licence">
-              <option value="Annual Pass (Shareholder)">
-                Annual Pass (Shareholder) 250:-
-              </option>
-              <option value="Annual Pass (Local residents)">
-                Annual Pass (Local residents) 500:-
-              </option>
-              <option value="Annual Pass">Annual Pass 800:-</option>
-              <option value="Weekly Pass">Weekly Pass 250:-</option>
-              <option value="Day Pass">Day Pass 150:-</option>
-            </select>
-            <input
-              type="datetime-local"
-              id="datetime-local"
-              min="2025-03-01T00:00"
-              max="2025-12-31T00:00"
-            />
-            <input type="submit" value="submit" />
-          </fieldset>
-        </form>
+        <div class="form-wrapper">
+          <form action="" method="post">
+            <fieldset>
+              <legend>Choose Product</legend>
+              <label for="full-name">Full Name:</label>
+              <input
+                type="text"
+                name="Full-name"
+                id="Full-name"
+                placeholder="Full Name"
+                required
+              />
+              <label for="email">Email Address:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+                required
+              />
+              <label for="phone">Phone nr:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+                required
+              />
+              <label for="licence">Choose a pass</label>
+              <select name="licence" id="licence" required>
+                <option value="Annual Pass (Shareholder)">
+                  Annual Pass (Shareholder) 250:-
+                </option>
+                <option value="Annual Pass (Local residents)">
+                  Annual Pass (Local residents) 500:-
+                </option>
+                <option value="Annual Pass">Annual Pass 800:-</option>
+                <option value="Weekly Pass">Weekly Pass 250:-</option>
+                <option value="Day Pass">Day Pass 150:-</option>
+              </select>
+              <label for="datetime-local">Select date & Time</label>
+              <input
+                type="datetime-local"
+                id="datetime-local"
+                min="2025-03-01T00:00"
+                max="2025-12-31T00:00"
+                required
+              />
+              <input type="submit" value="Submit" />
+            </fieldset>
+          </form>
+        </div>
       </div>
     </header>
 
