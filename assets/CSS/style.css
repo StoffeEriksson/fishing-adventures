@@ -367,6 +367,26 @@ input[type="submit"]:hover {
   
 }
 
+/* Success page */
+#hero-success {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/tennan.jpg);
+  min-height: 400px;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.success {
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
 
 
 /* Media query for larger screens (768px) */
