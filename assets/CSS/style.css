@@ -108,6 +108,7 @@ section {
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
+  padding-top: 4rem;
 }
 
 /* About us section */
