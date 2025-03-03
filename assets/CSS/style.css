@@ -108,7 +108,7 @@ section {
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
-  padding-top: 4rem;
+  padding-top: 4rem; /* prevents the navbar to overlap the section header */
 }
 
 /* About us section */
@@ -438,48 +438,3 @@ input[type="submit"]:hover {
   }
 }
 
-/* Media query for very large screens (1200px) */
-/* @media (min-width: 1200px) {
-    .fishing-text, .fishing-images {
-      flex: 1.2;
-      max-width: 600px;
-    }
-  
-    .image img {
-      max-width: 500px;
-    }'/
-  }
-  
-
-
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-/*
-@media (max-width: 768px) {
-    .wrapper {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .section {
-        margin-bottom: 20px;
-    }
-
-    .heading-text h1 {
-        font-size: 30px;
-    }
-
-    
-}*/
