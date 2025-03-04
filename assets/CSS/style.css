@@ -41,7 +41,7 @@ p {
   color: #ffffff;
 }
 
-/* Header section */
+/* Header section */ /* W3schools was used for knowledge how to make the backround image cover the background and make it responsive */
 .heading-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url(../images/strömmande\ vatten.jpg);
@@ -106,7 +106,7 @@ section {
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
-  padding-top: 4rem; /* prevents the navbar to overlap the section header */
+  padding-top: 4rem; /* prevents the navbar to overlap the section header when clicking the menu */
 }
 
 /* About us section */
@@ -397,26 +397,26 @@ input[type="submit"]:hover {
   }
 
   .container {
-    flex-direction: row; /* Side-by-side layout */
+    flex-direction: row; 
     justify-content: space-between;
-    align-items: stretch; /* Makes both sections take full height */
-    min-height: 100vh; /* Ensures full height */
+    align-items: stretch; 
+    min-height: 100vh; 
   }
 
   .fishing-text,
   .fishing-images {
-    flex: 1; /* Make both sections grow equally */
+    flex: 1; 
     min-width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; /* Center texts vertically */
+    justify-content: space-evenly; 
   }
 
   .fishing-images {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly; /* Center images as well */
+    justify-content: space-evenly; 
   }
 
   .image img {
