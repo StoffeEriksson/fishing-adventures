@@ -365,7 +365,7 @@ input[type="submit"]:hover {
 #hero-success {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/tennan.jpg);
-  min-height: 500px;
+  min-height: 100vh;
   background-position: center, center;
   background-repeat: no-repeat;
   background-size: cover;
