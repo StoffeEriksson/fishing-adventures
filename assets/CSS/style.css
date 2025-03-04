@@ -20,6 +20,7 @@
 
 body {
   padding-top: 57px; /* Prevents the navbar to get in the way of heading text */
+  
 }
 
 h1,
@@ -365,7 +366,7 @@ input[type="submit"]:hover {
 #hero-success {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/tennan.jpg);
-  min-height: 100vh;
+  min-height: 600px;
   background-position: center, center;
   background-repeat: no-repeat;
   background-size: cover;
