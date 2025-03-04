@@ -441,7 +441,9 @@ input[type="submit"]:hover {
     justify-content: center;
   }
 
-  section {
+  #about-us, #contact {
     max-width: 1000px;
   }
+
+  
 }
