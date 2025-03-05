@@ -69,7 +69,7 @@
         </div>
         <!-- (Code) W3 schools was used for inspiration and knowledge how to implement the date section in the form -->
         <div class="form-wrapper">
-          <form action="success.html" method="GET">
+          <form action="success.html" method="POST">
             <fieldset>
               <legend>Choose Product</legend>
               <label for="full-name">Full Name:</label>
@@ -79,6 +79,7 @@
                 id="full-name"
                 placeholder="Full Name"
                 autocomplete="on"
+                aria-label="input your name"
                 required
               />
               <label for="email">Email Address:</label>
@@ -88,6 +89,7 @@
                 id="email"
                 placeholder="Enter your email address"
                 autocomplete="email"
+                aria-label="input your email address"
                 required
               />
               <label for="phone">Phone nr:</label>
@@ -97,10 +99,11 @@
                 id="phone"
                 placeholder="Enter your phone number"
                 autocomplete="on"
+                aria-label="input your phone number"
                 required
               />
               <label for="licence">Choose a pass</label>
-              <select name="licence" id="licence" required>
+              <select name="licence" id="licence" aria-label="input a fishing licence" required>
                 <option value="" disabled selected>Select a pass</option>
                 <option value="Annual-Pass-Shareholder">
                   Annual Pass (Shareholder) 250:-
@@ -119,9 +122,10 @@
                 min="2025-03-01T00:00"
                 max="2025-12-31T00:00"
                 autocomplete="off"
+                aria-label="input a date"
                 required
               />
-              <input type="submit" value="Submit" />
+              <input type="submit" value="Submit" aria-label="submit button" />
             </fieldset>
           </form>
         </div>
